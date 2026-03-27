@@ -43,17 +43,19 @@
 </head>
 <body class="antialiased bg-gray-50 text-gray-900 dark:bg-black dark:text-white min-h-screen flex flex-col">
 
-<!-- Mobile Dark Mode Toggle (fixed top-right) -->
-<button id="darkModeToggleMobile" class="md:hidden fixed top-4 right-4 z-50 w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 dark:border-[#333333] bg-white dark:bg-[#111111] shadow-md transition-colors hover:bg-gray-100 dark:hover:bg-[#1e1e1e]">
-  <i class="far fa-moon text-gray-700 dark:text-gray-300 dark-icon-mobile hidden"></i>
-  <i class="far fa-sun text-gray-700 dark:text-gray-300 light-icon-mobile"></i>
-</button>
-
 <div class="flex-grow w-full">
 
   <!-- HEADER -->
   <header class="bg-white dark:bg-[#111111] border-b border-gray-200 dark:border-[#2a2a2a]">
     <div class="max-w-5xl mx-auto px-4 md:px-6 py-8">
+      <!-- Mobile Dark Mode Toggle -->
+      <div class="flex justify-end md:hidden mb-4">
+        <button id="darkModeToggleMobile" class="w-10 h-10 flex items-center justify-center flex-shrink-0 rounded-lg border border-gray-300 dark:border-[#333333] transition-colors hover:bg-gray-100 dark:hover:bg-[#1e1e1e]">
+          <i class="far fa-moon text-gray-700 dark:text-gray-300 dark-icon hidden"></i>
+          <i class="far fa-sun text-gray-700 dark:text-gray-300 light-icon"></i>
+        </button>
+      </div>
+      
       <div class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 text-center md:text-left">
         
         <!-- Profile Image -->
@@ -68,7 +70,7 @@
             <div class="flex items-center gap-2 flex-wrap justify-center md:justify-start">
               <h1 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white leading-tight">Jan Raven D. Zapata</h1>
             </div>
-            <button id="darkModeToggle" class="w-10 h-10 hidden md:flex items-center justify-center flex-shrink-0 rounded-lg border border-gray-300 dark:border-[#333333] transition-colors hover:bg-gray-100 dark:hover:bg-[#1e1e1e]">
+            <button id="darkModeToggle" class="hidden md:flex w-10 h-10 items-center justify-center flex-shrink-0 rounded-lg border border-gray-300 dark:border-[#333333] transition-colors hover:bg-gray-100 dark:hover:bg-[#1e1e1e]">
               <i class="far fa-moon text-gray-700 dark:text-gray-300 dark-icon hidden"></i>
               <i class="far fa-sun text-gray-700 dark:text-gray-300 light-icon"></i>
             </button>
@@ -83,7 +85,7 @@
             IT Student \ Developer \ Digital Artist          </p>
           
           <div class="flex flex-col sm:flex-row gap-2.5 justify-center md:justify-start">
-            <a href="/cdn-cgi/l/email-protection#cdb7acbdacb9aca7aca3bfacbba8a38daaa0aca4a1e3aea2a0" class="bg-black dark:bg-white text-white dark:text-black px-5 py-2.5 md:py-2 rounded-lg text-sm font-medium transition flex items-center justify-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-1">
+            <a href="mailto:zapatajanraven@gmail.com" class="bg-black dark:bg-white text-white dark:text-black px-5 py-2.5 md:py-2 rounded-lg text-sm font-medium transition flex items-center justify-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-1">
               <i class="fas fa-envelope text-xs"></i> Send Email
             </a>
             <a href="https://www.linkedin.com/in/jrdzapata" target="_blank" class="bg-white dark:bg-[#111111] border border-gray-200 dark:border-[#2a2a2a] text-gray-700 dark:text-white px-5 py-2.5 md:py-2 rounded-lg text-sm font-medium transition flex items-center justify-center gap-2 shadow-sm hover:shadow-md hover:border-gray-400 dark:hover:border-gray-500 hover:-translate-y-1">
@@ -321,13 +323,13 @@
           
           <div class="space-y-2 sm:space-y-2.5">
             <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Get in Touch</p>
-                        <a href="/cdn-cgi/l/email-protection#18627968796c797279766a796e7d76587f75797174367b7775" class="flex items-center p-2.5 sm:p-3 border border-gray-200 dark:border-[#2a2a2a] rounded-lg hover:bg-gray-50 dark:hover:bg-[#1e1e1e] transition hover:-translate-y-1 hover:shadow-md hover:border-gray-400 dark:hover:border-gray-500 cursor-pointer">
+                        <a href="mailto:zapatajanraven@gmail.com"  class="flex items-center p-2.5 sm:p-3 border border-gray-200 dark:border-[#2a2a2a] rounded-lg hover:bg-gray-50 dark:hover:bg-[#1e1e1e] transition hover:-translate-y-1 hover:shadow-md hover:border-gray-400 dark:hover:border-gray-500 cursor-pointer">
               <div class="flex items-center gap-2 sm:gap-3 min-w-0">
                 <div class="w-9 h-9 rounded-xl bg-gray-50 dark:bg-[#1e1e1e] flex items-center justify-center text-gray-400 flex-shrink-0 text-sm">
                   <i class="fas fa-envelope"></i>                </div>
                 <div class="min-w-0">
                   <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">Email</span>
-                  <p class="text-sm text-gray-900 dark:text-white font-normal truncate"><span class="__cf_email__" data-cfemail="91ebf0e1f0e5f0fbf0ffe3f0e7f4ffd1f6fcf0f8fdbff2fefc">[email&#160;protected]</span></p>
+                  <p class="text-sm text-gray-900 dark:text-white font-normal truncate">zapatajanraven@gmail.com</p>
                 </div>
               </div>
             </a>
@@ -374,6 +376,7 @@
   </div>
 </footer>
 
+
 <!-- Certificate Modal -->
 <div id="certModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" onclick="closeCertModal()">
   <div class="relative" onclick="event.stopPropagation()">
@@ -384,7 +387,7 @@
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Dark Mode Toggle
   const darkModeToggle = document.getElementById('darkModeToggle');
   const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
@@ -393,13 +396,15 @@
   
   function updateThemeIcon() {
     const isDark = html.classList.contains('dark');
-    document.querySelector('.dark-icon').classList.toggle('hidden', !isDark);
-    document.querySelector('.light-icon').classList.toggle('hidden', isDark);
-    document.querySelector('.dark-icon-mobile').classList.toggle('hidden', !isDark);
-    document.querySelector('.light-icon-mobile').classList.toggle('hidden', isDark);
+    document.querySelectorAll('.dark-icon').forEach(icon => {
+      icon.classList.toggle('hidden', !isDark);
+    });
+    document.querySelectorAll('.light-icon').forEach(icon => {
+      icon.classList.toggle('hidden', isDark);
+    });
   }
-
-  function toggleTheme() {
+  
+  function toggleDarkMode() {
     if (html.classList.contains('dark')) {
       html.classList.remove('dark');
       localStorage.setItem(themeKey, 'light');
@@ -410,8 +415,8 @@
     updateThemeIcon();
   }
   
-  darkModeToggle.addEventListener('click', toggleTheme);
-  darkModeToggleMobile.addEventListener('click', toggleTheme);
+  darkModeToggle.addEventListener('click', toggleDarkMode);
+  darkModeToggleMobile.addEventListener('click', toggleDarkMode);
   
   updateThemeIcon();
 
@@ -424,4 +429,16 @@
   }
 
   function closeCertModal() {
-    const modal = doc
+    const modal = document.getElementById('certModal');
+    modal.classList.replace('flex', 'hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCertModal();
+  });
+</script>
+
+</body>
+</html>
